@@ -52,8 +52,8 @@ private:
     void maxPrice(std::vector<std::vector<std::string>>& data) {
         for (size_t i = 0; i < dataForSell.size(); ++i) {
             int maxPrice = stoi(dataForSell[i][0]);
-            for (size_t j = i + 1; j < dataForBuy.size(); ++j) {
-                int newMaxPrice = stoi(dataForBuy[j][0]);
+            for (size_t j = i + 1; j < dataForSell.size(); ++j) {
+                int newMaxPrice = stoi(dataForSell[j][0]);
                 if (newMaxPrice > maxPrice) {
                     maxPrice = newMaxPrice;
                     Gswap(dataForSell[i], dataForSell[j]);
