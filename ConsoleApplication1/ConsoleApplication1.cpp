@@ -409,6 +409,7 @@ int main() {
                 }
                 else if (op == 9) {
                     g.clearData();
+                    cout << "All applications have been successfully deleted" << '\n';
                     cout << '\n' << "Enter operation: ";
                 }
                 else if (op == 10) {
